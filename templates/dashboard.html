@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owasp Flask Demo</title>
+    <link href="{{ url_for('static',filename='style2.css') }}" rel="stylesheet"/>
+</head>
+<body  align=center>
+    <h1>You are logged In</h1>
+    {% if username and role %}
+    <h1>Welcome {{ username }}!</h1>
+    <p>({{ role }})</p>
+    {% endif %}
+</body> 
+</html>
+
